@@ -9,7 +9,7 @@ import instagramIcon from '../assets/img/instagram-icon.svg';
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScroled] = useState(false);
-
+  // test
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
