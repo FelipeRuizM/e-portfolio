@@ -1,11 +1,5 @@
 /************** Variables **************/
-:root {
-  --peach: #EFC69B;
-  --amaranthPurple: #AF1B3F;
-  --englishViolet: #473144;
-  --khaki: #CCB69B;
-  --buff: #DF9B6D;
-}
+
 
 /************** Custom Font **************/
 @font-face {
@@ -41,40 +35,15 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: var(--englishViolet) !important;
-  color: #fff !important;
+  background-color: var(--bg-color) !important;
+  color: var(--sub-color) !important;
   font-family: 'Centra', sans-serif !important;
 }
 
-/************** Navbar **************/
-#my-navbar {
-  background-color: var(--peach) !important;
-}
-
-/************** Home **************/
-#home {
-  background-color: var(--buff);
-}
-
-.home-container {
-  margin: auto;
-  width: 50%;
-  display: flex;
-}
-
-/************** Skills **************/
-#skills {
-  background-color: var(--amaranthPurple);
-}
-
-/************** Projects **************/
-#projects {
-  background-color: var(--peach);
-}
-
-/************** Contact **************/
-#contact {
-  background-color: var(--khaki);
+hr {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border: 0 !important;
 }
 
 section {
@@ -84,3 +53,57 @@ section {
 .App {
   text-align: center;
 }
+
+.main-color {
+  background-color: var(--main-color);
+}
+
+.caret-color {
+  background-color: var(--caret-color);
+}
+
+.sub-color {
+  background-color: var(--sub-color);
+}
+
+.sub-alt-color {
+  background-color: var(--sub-alt-color);
+}
+
+/************** Navbar **************/
+#my-navbar {
+  background-color: var(--bg-color) !important;
+}
+
+#my-navbar a {
+  color: var(--sub-color) !important;
+}
+
+#my-navbar .dropdown-menu {
+  background-color: var(--bg-color) !important;
+  border-color: var(--sub-color) !important;
+}
+
+#my-navbar .dropdown-menu a:hover {
+  background-color: var(--main-color) !important;
+}
+
+/************** Home **************/
+.home-container {
+  margin: auto;
+  width: 50%;
+  display: flex;
+}
+
+/************** Skills **************/
+
+
+/************** Projects **************/
+
+
+/************** About **************/
+
+
+/************** Contact **************/
+
+
