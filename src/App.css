@@ -88,6 +88,10 @@ section {
   background-color: var(--main-color) !important;
 }
 
+#my-navbar .dropdown-menu a:active {
+  background-color: var(--main-color) !important;
+}
+
 /************** Home **************/
 .home-container {
   margin: auto;

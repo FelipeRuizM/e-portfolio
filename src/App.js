@@ -9,11 +9,14 @@ import { useState, useEffect } from 'react';
 import  changeTheme from './scripts/themeChanger';
 
 function App() {
-
-  const [theme, setTheme] = useState('aether');
+  const [theme, setTheme] = useState(() => {
+    const dataTheme = localStorage.getItem('data-theme');
+    return dataTheme || 'aether';
+  });
 
   useEffect(() => {
     changeTheme(theme);
+    localStorage.setItem('data-theme', theme);
   }, [theme]);
 
   return (

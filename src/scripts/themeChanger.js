@@ -76,7 +76,6 @@ function getThemes() {
 
 function changeTheme(theme) {
   let themes = getThemes();
-  console.log('theme: ' + theme);
   let myTheme = themes[theme];
   let root = document.documentElement; 
   root.style.setProperty('--bg-color', myTheme["bg-color"]);
