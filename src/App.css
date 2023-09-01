@@ -54,6 +54,7 @@ section {
   text-align: center;
 }
 
+/* This is for the <hr>s in the Home component */
 .main-color {
   background-color: var(--main-color);
 }
@@ -70,26 +71,60 @@ section {
   background-color: var(--sub-alt-color);
 }
 
+/* ^ This is for the <hr>s in the Home component ^ */
+
+/* This is for styling the text */
+
+.style-text-main-color {
+  color: var(--main-color) !important;
+}
+
+.style-text-caret-color {
+  color: var(--caret-color) !important;
+}
+
+.style-text-sub-color {
+  color: var(--sub-color) !important;
+}
+
+.style-text-sub-alt-color {
+  color: var(--sub-alt-color) !important;
+}
+
+.style-text-text-color {
+  color: var(--text-color) !important;
+}
+
+/* This is for styling the text */
+
 /************** Navbar **************/
 #my-navbar {
   background-color: var(--bg-color) !important;
 }
 
 #my-navbar a {
-  color: var(--sub-color) !important;
+  color: var(--text-color);
 }
 
 #my-navbar .dropdown-menu {
-  background-color: var(--bg-color) !important;
-  border-color: var(--sub-color) !important;
+  background-color: var(--bg-color);
+  border-color: var(--sub-color);
 }
 
 #my-navbar .dropdown-menu a:hover {
-  background-color: var(--main-color) !important;
+  background-color: var(--main-color);
 }
 
 #my-navbar .dropdown-menu a:active {
-  background-color: var(--main-color) !important;
+  background-color: var(--main-color);
+}
+
+#basic-nav-dropdown {
+  color: var(--sub-color) !important;
+}
+
+.navbar-toggler {
+  background-color: var(--sub-color) !important;
 }
 
 /************** Home **************/

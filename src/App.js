@@ -21,7 +21,7 @@ function App() {
 
   return (
       <div className="App">
-        <NavBar theme={theme} setTheme={setTheme} />
+        <NavBar setTheme={setTheme} />
         <Home />
         <Skills />
         <Projects />

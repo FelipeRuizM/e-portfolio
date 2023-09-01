@@ -35,14 +35,14 @@
     "text-color": "#eee",
     "error-color": "#da3333"
   },
-  "pink-lemonade": {
-    "bg-color": "#f6d992",
-    "main-color": "#f6a192",
-    "caret-color": "#fcfcf8",
-    "sub-color": "#f6b092",
-    "sub-alt-color": "#f6cc93",
-    "text-color": "#fcfcf8",
-    "error-color": "#ff6f69"
+  "horizon": {
+    "bg-color": "#1c1e26",
+    "main-color": "#c4a88a",
+    "caret-color": "#bbbbbb",
+    "sub-color": "#db886f",
+    "sub-alt-color": "#17181f",
+    "text-color": "#bbbbbb",
+    "error-color": "#d55170"
   },
   "retrocast": {
     "bg-color": "#07737a",

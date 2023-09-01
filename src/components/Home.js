@@ -1,19 +1,17 @@
-import { Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 export const Home = () => {
 
   return (
     <section id='home'>
-      <Container>
-        <hr size="50" className='main-color'></hr>
-        <hr size="50" className='caret-color'></hr>
-        <hr size="50" className='sub-color'></hr>
-        <hr size="50" className='sub-alt-color'></hr>
-        <Container>Hi, my name is</Container>
-        <Container>Felipe Ruiz</Container>
-        <Container>I'm a Full-Stack Dev</Container>
-        <Container></Container>
-      </Container>
+      <Row className="justify-content-md-center">
+        <Col className="col-lg-9 mt-5 p-4">
+          <h4 className="style-text-sub-color text-start">Hi, my name is</h4>
+          <h1 className="style-text-main-color display-1 text-start">Felipe Ruiz.</h1>
+          <h2 className="style-text-text-color display-1 text-start">I'm a Full-Stack Dev.</h2>
+          <p className="h4"></p>
+        </Col>
+      </Row>
     </section>
   );
 }
