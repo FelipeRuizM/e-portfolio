@@ -93,7 +93,7 @@ export const getThemes = () => JSON.parse(`
   }  
   `);
 
-export const getThemesName = () => Object.keys(getThemes());
+export const getThemesName = () => Object.keys(getThemes()).sort();
 
 export const changeTheme = (theme) => {
   let themes = getThemes();
