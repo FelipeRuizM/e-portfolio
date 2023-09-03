@@ -32,9 +32,9 @@ function App() {
       <div className="App">
         <NavBar setTheme={setTheme} />
         <Home />
+        <About />
         <Projects />
         <Skills />
-        <About />
         <Contact />
       </div>
   );

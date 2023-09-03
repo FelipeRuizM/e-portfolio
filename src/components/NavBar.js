@@ -28,16 +28,14 @@ export const NavBar = ({ setTheme }) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">
-              <span className='style-text-sub-color'>1.</span> Home</Nav.Link>
+            <Nav.Link href="#about">
+              <span className='style-text-sub-color'>1.</span> About</Nav.Link>
             <Nav.Link href="#projects">
               <span className='style-text-sub-color'>2.</span> Projects</Nav.Link>
             <Nav.Link href="#skills">
               <span className='style-text-sub-color'>3.</span> Skills</Nav.Link>
-            <Nav.Link href="#about">
-              <span className='style-text-sub-color'>4.</span> About</Nav.Link>
             <Nav.Link href="#contact">
-              <span className='style-text-sub-color'>5.</span> Contact</Nav.Link>
+              <span className='style-text-sub-color'>4.</span> Contact</Nav.Link>
             <NavDropdown title="Themes" id="basic-nav-dropdown">
               {themeNames.map((themeName) =>
                 <NavDropdown.Item key={themeName} onClick={() => setTheme(themeName)}>{themeName}</NavDropdown.Item>

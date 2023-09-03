@@ -85,10 +85,19 @@ section {
   color: var(--text-color);
 }
 
+#my-navbar a:hover {
+  color: var(--sub-color);
+}
+
 #my-navbar .dropdown-menu {
   background-color: var(--bg-color);
   border-color: var(--sub-color);
 }
+
+#my-navbar .dropdown-menu a {
+  transition: color .1s ease-in-out,background-color .1s ease-in-out,border-color .1s ease-in-out;
+}
+
 
 #my-navbar .dropdown-menu a:hover {
   background-color: var(--main-color);
@@ -108,7 +117,7 @@ section {
 
 /************** Home **************/
 
-#home {
+#home-row {
   margin-top: 8rem;
 }
 
@@ -118,14 +127,23 @@ section {
   display: flex;
 }
 
-#projects-button {
+#know-more-button {
   border: 0.8;
   color: var(--sub-color);
   background-color: var(--bg-color);
+  border-width: 0.1rem;
+  border-style: solid;
   border-color: var(--sub-color);
   border-radius: 4px;
   padding: 1.25rem 1.75rem;
   margin-top: 50px;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+#know-more-button:hover {
+  background-color: var(--sub-color);
+  color: var(--bg-color);
 }
 
 /************** Skills **************/
