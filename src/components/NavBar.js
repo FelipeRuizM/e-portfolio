@@ -2,15 +2,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { getThemesName } from '../scripts/themeChanger';
 
 export const NavBar = ({ setTheme }) => {
+  
+  let themeNames = getThemesName();
+  console.log(themeNames);
 
-  var prevScrollpos = window.pageYOffset;
-
+  var prevScrollpos = window.scrollY;
   window.onscroll = () => {
-    var currentScrollPos = window.pageYOffset;
-    console.log('prevScrollpos: ' + prevScrollpos);
-    console.log('currentScrollPos: ' + currentScrollPos);
+    var currentScrollPos = window.scrollY;
+
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("my-navbar").style.top = "0";
     } else {
@@ -37,13 +39,9 @@ export const NavBar = ({ setTheme }) => {
             <Nav.Link href="#contact">
               <span className='style-text-sub-color'>5.</span> Contact</Nav.Link>
             <NavDropdown title="Themes" id="basic-nav-dropdown">
-              <NavDropdown.Item onClick={() => setTheme('aether')}>Aether</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setTheme('cyberspace')}>Cyberspace</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setTheme('dracula')}>Dracula</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setTheme('mexican')}>Mexican</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setTheme('pink-lemonade')}>Pink-Lemonade</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setTheme('retrocast')}>Retrocast</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => setTheme('shadow')}>Shadow</NavDropdown.Item>
+              {themeNames.map((themeName) =>
+                <NavDropdown.Item key={themeName} onClick={() => setTheme(themeName)}>{themeName}</NavDropdown.Item>
+              )}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

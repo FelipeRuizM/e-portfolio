@@ -61,5 +61,14 @@
     "sub-alt-color": "#171717",
     "text-color": "#eee",
     "error-color": "#fff"
+  },
+  "blue-dolphin": {
+    "bg-color": "#003950",
+    "main-color": "#ffcefb",
+    "caret-color": "#00bcd4",
+    "sub-color": "#00e4ff",
+    "sub-alt-color": "#014961",
+    "text-color": "#82eaff",
+    "error-color": "#ffbde6"
   }
 }

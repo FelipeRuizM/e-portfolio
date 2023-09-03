@@ -6,17 +6,26 @@ import { Projects } from './components/Projects';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { useState, useEffect } from 'react';
-import  changeTheme from './scripts/themeChanger';
+import { changeTheme } from './scripts/themeChanger';
 
 function App() {
+
+  const DEFAULT_THEME = 'aether';
+  const THEME_LOCAL_STORAGE = 'data-theme';
+
   const [theme, setTheme] = useState(() => {
-    const dataTheme = localStorage.getItem('data-theme');
-    return dataTheme || 'aether';
+    const dataTheme = localStorage.getItem(THEME_LOCAL_STORAGE);
+    return dataTheme || DEFAULT_THEME;
   });
 
   useEffect(() => {
-    changeTheme(theme);
-    localStorage.setItem('data-theme', theme);
+    try {
+      changeTheme(theme);
+      localStorage.setItem(THEME_LOCAL_STORAGE, theme);
+    } catch (error) {
+      changeTheme(DEFAULT_THEME);
+      localStorage.setItem(THEME_LOCAL_STORAGE, DEFAULT_THEME);
+    }
   }, [theme]);
 
   return (

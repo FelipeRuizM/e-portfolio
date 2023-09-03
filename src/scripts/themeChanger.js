@@ -1,11 +1,4 @@
-function getThemes() {
-  // let themes = '';
-  // fetch('../themes/themes.json')
-  //   .then((response) => JSON.parse(response))
-  //   .then((json) => themes = json)
-  //   .catch((error) => console.log(error));
-  // return (theme) => themes[theme];
-  return JSON.parse(`
+export const getThemes = () => JSON.parse(`
   {
     "aether": {
       "bg-color": "#101820",
@@ -34,23 +27,14 @@ function getThemes() {
       "text-color": "#f8f8f2",
       "error-color": "#ff5555"
     },
-    "mexican": {
-      "bg-color": "#f8ad34",
-      "main-color": "#b12189",
-      "caret-color": "#eee",
-      "sub-color": "#333",
-      "sub-alt-color": "#b12189",
-      "text-color": "#eee",
-      "error-color": "#da3333"
-    },
-    "pink-lemonade": {
-      "bg-color": "#f6d992",
-      "main-color": "#f6a192",
-      "caret-color": "#fcfcf8",
-      "sub-color": "#f6b092",
-      "sub-alt-color": "#f6cc93",
-      "text-color": "#fcfcf8",
-      "error-color": "#ff6f69"
+    "horizon": {
+      "bg-color": "#1c1e26",
+      "main-color": "#c4a88a",
+      "caret-color": "#bbbbbb",
+      "sub-color": "#db886f",
+      "sub-alt-color": "#17181f",
+      "text-color": "#bbbbbb",
+      "error-color": "#d55170"
     },
     "retrocast": {
       "bg-color": "#07737a",
@@ -69,12 +53,49 @@ function getThemes() {
       "sub-alt-color": "#171717",
       "text-color": "#eee",
       "error-color": "#fff"
+    },
+    "dollar": {
+      "bg-color": "#e4e4d4",
+      "main-color": "#6b886b",
+      "caret-color": "#424643",
+      "sub-color": "#8a9b69",
+      "sub-alt-color": "#cbd0bf",
+      "text-color": "#555a56",
+      "error-color": "#d60000"
+    },
+    "blue dolphin": {
+      "bg-color": "#003950",
+      "main-color": "#ffcefb",
+      "caret-color": "#00bcd4",
+      "sub-color": "#00e4ff",
+      "sub-alt-color": "#014961",
+      "text-color": "#82eaff",
+      "error-color": "#ffbde6"
+    },
+    "laser": {
+      "bg-color": "#221b44",
+      "main-color": "#009eaf",
+      "caret-color": "#009eaf",
+      "sub-color": "#b82356",
+      "sub-alt-color": "#1e173b",
+      "text-color": "#dbe7e8",
+      "error-color": "#a8d400"
+    },
+    "husqy": {
+      "bg-color": "#000000",
+      "main-color": "#c58aff",
+      "caret-color": "#c58aff",
+      "sub-color": "#972fff",
+      "sub-alt-color": "#1e001e",
+      "text-color": "#ebd7ff",
+      "error-color": "#da3333"
     }
   }  
   `);
-}
 
-function changeTheme(theme) {
+export const getThemesName = () => Object.keys(getThemes());
+
+export const changeTheme = (theme) => {
   let themes = getThemes();
   let myTheme = themes[theme];
   let root = document.documentElement; 
@@ -86,5 +107,3 @@ function changeTheme(theme) {
   root.style.setProperty('--text-color', myTheme["text-color"]);
   root.style.setProperty('--error-color', myTheme["error-color"]);
 }
-
-export default changeTheme;
