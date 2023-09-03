@@ -5,8 +5,22 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export const NavBar = ({ setTheme }) => {
 
+  var prevScrollpos = window.pageYOffset;
+
+  window.onscroll = () => {
+    var currentScrollPos = window.pageYOffset;
+    console.log('prevScrollpos: ' + prevScrollpos);
+    console.log('currentScrollPos: ' + currentScrollPos);
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("my-navbar").style.top = "0";
+    } else {
+      document.getElementById("my-navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary sticky-top" id="my-navbar">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top" id="my-navbar">
       <Container>
         <Navbar.Brand href="#home" id='fr-brand'><span className='style-text'>FR</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -14,10 +28,10 @@ export const NavBar = ({ setTheme }) => {
           <Nav className="ms-auto">
             <Nav.Link href="#home">
               <span className='style-text-sub-color'>1.</span> Home</Nav.Link>
-            <Nav.Link href="#skills">
-              <span className='style-text-sub-color'>2.</span> Skills</Nav.Link>
             <Nav.Link href="#projects">
-              <span className='style-text-sub-color'>3.</span> Projects</Nav.Link>
+              <span className='style-text-sub-color'>2.</span> Projects</Nav.Link>
+            <Nav.Link href="#skills">
+              <span className='style-text-sub-color'>3.</span> Skills</Nav.Link>
             <Nav.Link href="#about">
               <span className='style-text-sub-color'>4.</span> About</Nav.Link>
             <Nav.Link href="#contact">

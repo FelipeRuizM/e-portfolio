@@ -1,6 +1,3 @@
-/************** Variables **************/
-
-
 /************** Custom Font **************/
 @font-face {
   font-family: Centra;
@@ -54,25 +51,6 @@ section {
   text-align: center;
 }
 
-/* This is for the <hr>s in the Home component */
-.main-color {
-  background-color: var(--main-color);
-}
-
-.caret-color {
-  background-color: var(--caret-color);
-}
-
-.sub-color {
-  background-color: var(--sub-color);
-}
-
-.sub-alt-color {
-  background-color: var(--sub-alt-color);
-}
-
-/* ^ This is for the <hr>s in the Home component ^ */
-
 /* This is for styling the text */
 
 .style-text-main-color {
@@ -95,11 +73,12 @@ section {
   color: var(--text-color) !important;
 }
 
-/* This is for styling the text */
+/* ^ This is for styling the text ^ */
 
 /************** Navbar **************/
 #my-navbar {
   background-color: var(--bg-color) !important;
+  transition: top 0.3s;
 }
 
 #my-navbar a {
@@ -128,10 +107,25 @@ section {
 }
 
 /************** Home **************/
+
+#home {
+  margin-top: 8rem;
+}
+
 .home-container {
   margin: auto;
   width: 50%;
   display: flex;
+}
+
+#projects-button {
+  border: 0.8;
+  color: var(--sub-color);
+  background-color: var(--bg-color);
+  border-color: var(--sub-color);
+  border-radius: 4px;
+  padding: 1.25rem 1.75rem;
+  margin-top: 50px;
 }
 
 /************** Skills **************/

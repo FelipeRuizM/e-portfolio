@@ -23,8 +23,8 @@ function App() {
       <div className="App">
         <NavBar setTheme={setTheme} />
         <Home />
-        <Skills />
         <Projects />
+        <Skills />
         <About />
         <Contact />
       </div>
