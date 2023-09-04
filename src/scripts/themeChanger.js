@@ -9,6 +9,33 @@ export const getThemes = () => JSON.parse(`
       "text-color": "#eedaea",
       "error-color": "#ff5253"
     },
+    "matrix": {
+      "bg-color": "#000000",
+      "main-color": "#15ff00",
+      "caret-color": "#15ff00",
+      "sub-color": "#006500",
+      "sub-alt-color": "#032000",
+      "text-color": "#d1ffcd",
+      "error-color": "#da3333"
+    },
+    "brazil": {
+      "bg-color": "#00a859",
+      "main-color": "#ffcc29",
+      "caret-color": "#0033a0",
+      "sub-color": "#0033b0",
+      "sub-alt-color": "#000000",
+      "text-color": "#ffffff",
+      "error-color": "#ff0000"
+    },
+    "80's after dark": {
+      "bg-color": "#1b1d36",
+      "main-color": "#fca6d1",
+      "caret-color": "#99d6ea",
+      "sub-color": "#99d6ea",
+      "sub-alt-color": "#17182c",
+      "text-color": "#e1e7ec",
+      "error-color": "#fffb85"
+    },
     "cyberspace": {
       "bg-color": "#181c18",
       "main-color": "#00ce7c",
@@ -63,14 +90,14 @@ export const getThemes = () => JSON.parse(`
       "text-color": "#555a56",
       "error-color": "#d60000"
     },
-    "blue dolphin": {
-      "bg-color": "#003950",
-      "main-color": "#ffcefb",
-      "caret-color": "#00bcd4",
-      "sub-color": "#00e4ff",
-      "sub-alt-color": "#014961",
-      "text-color": "#82eaff",
-      "error-color": "#ffbde6"
+    "earthsong": {
+      "bg-color": "#292521",
+      "main-color": "#509452",
+      "caret-color": "#1298ba",
+      "sub-color": "#f5ae2d",
+      "sub-alt-color": "#1d1b18",
+      "text-color": "#e6c7a8",
+      "error-color": "#7e2a33"
     },
     "laser": {
       "bg-color": "#221b44",

@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { getThemesName } from '../scripts/themeChanger';
 
-export const NavBar = ({ setTheme }) => {
+export const NavBar = ({ theme, setTheme }) => {
   
   let themeNames = getThemesName();
   console.log(themeNames);
@@ -36,7 +36,7 @@ export const NavBar = ({ setTheme }) => {
               <span className='style-text-sub-color'>3.</span> Skills</Nav.Link>
             <Nav.Link href="#contact">
               <span className='style-text-sub-color'>4.</span> Contact</Nav.Link>
-            <NavDropdown title="Themes" id="basic-nav-dropdown">
+            <NavDropdown title={theme} id="basic-nav-dropdown">
               {themeNames.map((themeName) =>
                 <NavDropdown.Item key={themeName} onClick={() => setTheme(themeName)}>{themeName}</NavDropdown.Item>
               )}

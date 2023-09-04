@@ -30,7 +30,7 @@ function App() {
 
   return (
       <div className="App">
-        <NavBar setTheme={setTheme} />
+        <NavBar theme={theme} setTheme={setTheme} />
         <Home />
         <About />
         <Projects />
