@@ -9,9 +9,9 @@ export const NavBar = ({ setTheme }) => {
   let themeNames = getThemesName();
   console.log(themeNames);
 
-  var prevScrollpos = window.scrollY;
+  let prevScrollpos = window.scrollY;
   window.onscroll = () => {
-    var currentScrollPos = window.scrollY;
+    let currentScrollPos = window.scrollY;
 
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("my-navbar").style.top = "0";

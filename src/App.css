@@ -24,11 +24,11 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
+  max-width: 100%;
+  margin: 0px auto;
   scroll-behavior: smooth;
-}
-
-body {
+  /* overflow-x: hidden; */
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
@@ -100,7 +100,8 @@ section {
 
 
 #my-navbar .dropdown-menu a:hover {
-  background-color: var(--main-color);
+  background-color: var(--sub-color);
+  color: var(--bg-color);
 }
 
 #my-navbar .dropdown-menu a:active {
@@ -153,7 +154,9 @@ section {
 
 
 /************** About **************/
-
+#about-row {
+  margin-top: 5rem;
+}
 
 /************** Contact **************/
 
