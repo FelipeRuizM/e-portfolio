@@ -32,10 +32,8 @@ export const NavBar = ({ theme, setTheme }) => {
               <span className='style-text-sub-color'>1.</span> About</Nav.Link>
             <Nav.Link href="#projects">
               <span className='style-text-sub-color'>2.</span> Projects</Nav.Link>
-            <Nav.Link href="#skills">
-              <span className='style-text-sub-color'>3.</span> Skills</Nav.Link>
             <Nav.Link href="#contact">
-              <span className='style-text-sub-color'>4.</span> Contact</Nav.Link>
+              <span className='style-text-sub-color'>3.</span> Contact</Nav.Link>
             <NavDropdown title={theme} id="basic-nav-dropdown">
               {themeNames.map((themeName) =>
                 <NavDropdown.Item key={themeName} onClick={() => setTheme(themeName)}>{themeName}</NavDropdown.Item>

@@ -1,4 +1,5 @@
 import { Row, Col } from 'react-bootstrap';
+import Cards from './Cards';
 
 export const Projects = () => {
   return (
@@ -9,6 +10,7 @@ export const Projects = () => {
             <span className='style-text-sub-color'>2.</span> Projects</h3>
         </Col>
       </Row>
+      <Cards />
     </section>
   );
 }

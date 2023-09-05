@@ -28,7 +28,7 @@ html, body {
   max-width: 100%;
   margin: 0px auto;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
@@ -51,8 +51,31 @@ section {
   text-align: center;
 }
 
-#about-row, #contact-row, #projects-row, #skills-row {
+#about-row, #contact-row, #projects-row {
   margin-top: 5rem;
+}
+
+@keyframes link-anim {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;    
+  }
+}
+
+.link-effect {
+  color: var(--sub-color) !important;
+  text-decoration: none;
+  box-shadow: 0px 0px 0px var(--sub-color);
+  transition: box-shadow .15s ease-in-out;
+}
+
+.link-effect:hover {
+  box-shadow: 0px 2px 0px var(--sub-color);
 }
 
 /* This is for styling the text */
@@ -151,14 +174,40 @@ section {
   color: var(--bg-color);
 }
 
-/************** Skills **************/
+.inverted-text {
+  transform: scaleX(-1);
+}
 
 
 /************** Projects **************/
 
+.projects-card {
+  border: 0.8 !important;
+  color: var(--sub-color) !important;
+  background-color: var(--bg-color) !important;
+  border-width: 0.1rem !important;
+  border-style: solid !important;
+  border-color: var(--sub-color) !important;
+  border-radius: 4px !important;
+  cursor: pointer;
+}
 
 /************** About **************/
 
+.profile-pic {
+  margin-right: 8px !important;
+  transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+  box-shadow: 10px 10px var(--sub-color);
+}
+
+.profile-pic:hover {
+  transform: translate(-0.5rem, -0.5rem);
+  box-shadow: 15px 15px var(--main-color);
+}
+
+.skills-list {
+  list-style: none;
+}
 
 /************** Contact **************/
 

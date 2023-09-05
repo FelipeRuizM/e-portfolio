@@ -45,6 +45,16 @@ export const getThemes = () => JSON.parse(`
       "text-color": "#c2fbe1",
       "error-color": "#ff5f5f"
     },
+    "chaos theory": {
+      "bg-color": "#141221",
+      "main-color": "#fd77d7",
+      "caret-color": "#dde5ed",
+      "text-color": "#dde5ed",
+      "error-color": "#fd77d7",
+      "sub-color": "#676e8a",
+      "sub-alt-color": "#1e1d2f",
+      "error-color": "#ff5869"
+    },
     "dracula": {
       "bg-color": "#282a36",
       "main-color": "#bd93f9",
