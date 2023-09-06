@@ -155,7 +155,7 @@ section {
   display: flex;
 }
 
-#know-more-button {
+#know-more-button, #contact-button {
   border: 0.8;
   color: var(--sub-color);
   background-color: var(--bg-color);
@@ -169,7 +169,7 @@ section {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
-#know-more-button:hover {
+#know-more-button:hover, #contact-button:hover {
   background-color: var(--sub-color);
   color: var(--bg-color);
 }
@@ -189,6 +189,11 @@ section {
   border-color: var(--sub-color) !important;
   border-radius: 4px !important;
   cursor: pointer;
+  transition: border-color .2s ease-in-out;
+}
+
+.projects-card:hover {
+  border-color: var(--main-color) !important;
 }
 
 /************** About **************/
