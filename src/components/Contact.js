@@ -11,7 +11,7 @@ export const Contact = () => {
         </Col>
       </Row>
       <Row className="justify-content-md-center align-items-center">
-        <Col className="col-lg-4">
+        <Col className="col-lg-4 p-5">
           <h3 style={{marginTop: '3rem'}} className="style-text-main-color display-4">Let's Talk</h3>
           <p style={{marginBottom: '5rem'}} className="style-text-text-color">I'm ready for new adventures and currently looking for opportunities. Even if you just have a question or want to connect, please feel free to do so. I'm a nice guy, I swear! :D</p>
           <a id="contact-button" className="float-center" href="mailto: felipe.ruiz0011@gmail.com">Reach Out &gt;</a>
