@@ -12,9 +12,11 @@ function App() {
 
   const DEFAULT_THEME = 'aether';
   const THEME_LOCAL_STORAGE = 'data-theme';
+  let newAccess = false;
 
   const [theme, setTheme] = useState(() => {
     const dataTheme = localStorage.getItem(THEME_LOCAL_STORAGE);
+    newAccess = dataTheme ? false : true;
     return dataTheme || DEFAULT_THEME;
   });
 
@@ -30,7 +32,7 @@ function App() {
 
   return (
       <div className="App">
-        <NavBar theme={theme} setTheme={setTheme} />
+        <NavBar theme={newAccess ? 'change me!' : theme} setTheme={setTheme} />
         <Home theme={theme} />
         <About />
         <Projects />
