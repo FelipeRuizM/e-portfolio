@@ -213,6 +213,31 @@ section {
   list-style: none;
 }
 
-/************** Contact **************/
+/************** Footer **************/
+
+.footer {
+  min-height: 20vh;
+  box-shadow: 0 2px 0 var(--sub-color) inset;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.upside-down-icons {
+  transform: scaleY(-1);
+}
+
+.icon {
+  text-decoration: none;
+  margin: 0px 1rem;
+  color: var(--text-color);
+  transition: color .15s ease-in-out;
+}
+
+.icon:hover {
+  color: var(--sub-color);
+}
 
 

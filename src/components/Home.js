@@ -16,11 +16,11 @@ export const Home = theme => {
     <section id='home'>Toasty!
       <Row className="justify-content-md-center align-items-center" id="home-row">
         <Col className="col-lg-9 p-4">
-          <h4 className="style-text-sub-color text-start">Hi, my name is</h4>
+          <h4 className="style-text-sub-color text-start">Hey, my name is</h4>
           <h1 className={firstNameClassName}>Felipe Ruiz.</h1>
           <h2 className="style-text-text-color display-1 text-start">I'm a Full-Stack Dev.</h2>
-          <p className="text-start col-8">I'm a software developer that loves building exceptional things. Currently, I'm focused on getting a job in my area and develop my skills even further.</p>
-          <a id="know-more-button" className="float-start" href="#about">Get to know me &gt;</a>
+          <p className="text-start col-8">I'm a software developer who enjoys creating amazing stuff. Right now, my main goal is to find a job in my field and keep improving my skills.</p>
+          <a id="know-more-button" className="float-start" href="#about">A little about me &gt;</a>
         </Col>
       </Row>
     </section>

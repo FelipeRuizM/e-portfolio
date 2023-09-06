@@ -35,7 +35,7 @@ export const About = () => {
           </div>
         </Col>
         <Col md={{ span: 3, offset: 1 }} className="col-sm-3 m-2">
-          <Image src={require('../assets/img/profile-pic.png')} alt={"Felipe Ruiz Profile"} className='img-fluid profile-pic' rounded />
+          <Image src={require('../assets/profile-pic.png')} alt={"Felipe Ruiz Profile"} className='img-fluid profile-pic' rounded />
         </Col>
       </Row>
     </section>
