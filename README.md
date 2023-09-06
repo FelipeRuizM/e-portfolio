@@ -10,3 +10,4 @@ Special thanks to these people that helped me through this project:
 - Matheus Tanaka
 - Pedro Santana
 - Purvi Dubey
+- Tahmid Arnob
