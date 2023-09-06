@@ -52,7 +52,7 @@ section {
 }
 
 #about-row, #contact-row, #projects-row {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 @keyframes link-anim {
@@ -183,7 +183,6 @@ section {
 
 .projects-card {
   border: 0.8 !important;
-  color: var(--sub-color) !important;
   background-color: var(--bg-color) !important;
   border-width: 0.1rem !important;
   border-style: solid !important;

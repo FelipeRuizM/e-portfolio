@@ -7,7 +7,6 @@ import { getThemesName } from '../scripts/themeChanger';
 export const NavBar = ({ theme, setTheme }) => {
   
   let themeNames = getThemesName();
-  console.log(themeNames);
 
   let prevScrollpos = window.scrollY;
   window.onscroll = () => {
