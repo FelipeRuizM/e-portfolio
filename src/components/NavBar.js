@@ -23,7 +23,7 @@ export const NavBar = ({ theme, setTheme }) => {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top" id="my-navbar">
       <Container>
-        <Navbar.Brand href="#home" id='fr-brand'><span className='style-text'>FR</span></Navbar.Brand>
+        <Navbar.Brand href="#home" id='fr-brand'><span id='logo-font'>FR</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
