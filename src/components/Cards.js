@@ -28,6 +28,12 @@ function Cards() {
       description: "It's a local multiplayer Tic-Tac-Toe game with overlapping tokens. I thought the idea was original, but there's actually a game like that called Gobblet Gobblers.",
       link: "https://github.com/FelipeRuizM/MatryoshkaGrid",
       technologies: 'JavaScript p5'
+    },
+    {
+      name: "Tetris",
+      description: "A recreation of the famous game Tetris. While creating this game, I had the opportunity to put into practice what I was learning during my C++ classes.",
+      link: "https://github.com/FelipeRuizM/tetris",
+      technologies: 'C++ SFML'
     }
   ];
 
