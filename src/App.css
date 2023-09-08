@@ -188,7 +188,6 @@ section {
   transform: scaleX(-1);
 }
 
-
 /************** Projects **************/
 
 .projects-card {
@@ -223,6 +222,13 @@ section {
   list-style: none;
 }
 
+/************** Contact **************/
+
+#contact {
+  min-height: 80vh !important;
+}
+
+
 /************** Footer **************/
 
 .footer {
@@ -249,5 +255,3 @@ section {
 .icon:hover {
   color: var(--sub-color);
 }
-
-
