@@ -34,6 +34,12 @@ function Cards() {
       description: "A recreation of the famous game Tetris. While creating this game, I had the opportunity to put into practice what I was learning during my C++ classes.",
       link: "https://github.com/FelipeRuizM/tetris",
       technologies: 'C++ SFML'
+    },
+    {
+      name: "ePortfolio",
+      description: "Are you asking yourself how I built this? Well, it's not a mystery since this is an open-source ePortfolio; you can check every line of code on my GitHub.",
+      link: "https://github.com/FelipeRuizM/e-portfolio",
+      technologies: 'React Node.js'
     }
   ];
 
