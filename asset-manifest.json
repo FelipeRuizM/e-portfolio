@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/e-portfolio/static/css/main.e64e25ca.css",
+    "main.css": "/e-portfolio/static/css/main.49ecb5c5.css",
     "main.js": "/e-portfolio/static/js/main.3b1e22b1.js",
     "static/js/787.f23336e7.chunk.js": "/e-portfolio/static/js/787.f23336e7.chunk.js",
     "static/media/profile-pic.png": "/e-portfolio/static/media/profile-pic.dc968a60d355ec0d1b3c.png",
@@ -9,12 +9,12 @@
     "static/media/CentraNo2-Book.ttf": "/e-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/Yellowtail-Regular.ttf": "/e-portfolio/static/media/Yellowtail-Regular.68015177cbf9575be4a4.ttf",
     "index.html": "/e-portfolio/index.html",
-    "main.e64e25ca.css.map": "/e-portfolio/static/css/main.e64e25ca.css.map",
+    "main.49ecb5c5.css.map": "/e-portfolio/static/css/main.49ecb5c5.css.map",
     "main.3b1e22b1.js.map": "/e-portfolio/static/js/main.3b1e22b1.js.map",
     "787.f23336e7.chunk.js.map": "/e-portfolio/static/js/787.f23336e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e64e25ca.css",
+    "static/css/main.49ecb5c5.css",
     "static/js/main.3b1e22b1.js"
   ]
 }
