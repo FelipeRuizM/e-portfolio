@@ -19,7 +19,7 @@ export const Home = theme => {
           <h4 className="style-text-sub-color text-start">Hey, my name is</h4>
           <h1 className={firstNameClassName}>Felipe Ruiz.</h1>
           <h2 className="style-text-text-color display-1 text-start">I'm a Full-Stack Dev.</h2>
-          <p className="text-start col-8">This is a customizable e-portfolio, which means you can pick your preferred theme by clicking on the navbar dropdown. Right now, my main goal is to find a job in my field and keep improving my skills.</p>
+          <p className="text-start col-8">My main goal at the moment is to find a job in my field and keep improving my skills. And hey, this is a customizable e-portfolio, which means you can pick your preferred theme by clicking on the navbar dropdown!</p>
           <a id="know-more-button" className="float-start" href="#about">A little about me &gt;</a>
         </Col>
       </Row>
