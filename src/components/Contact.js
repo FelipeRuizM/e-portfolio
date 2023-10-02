@@ -1,15 +1,11 @@
 import { Row, Col } from "react-bootstrap";
+import { SectionHeading } from "./SectionHeading";
 
 export const Contact = () => {
 
   return (
     <section id='contact'>&zwnj;
-      <Row className="justify-content-md-center align-items-center" id="contact-row">
-        <Col className="col-lg-8 p-4">
-          <h3 className="style-text-text-color display-4 text-start">
-            <span className='style-text-sub-color'>3.</span> Contact</h3>
-        </Col>
-      </Row>
+      <SectionHeading index={3} heading={'Contact'} />
       <Row className="justify-content-md-center align-items-center">
         <Col className="col-lg-4 p-5">
           <h3 style={{marginTop: '3rem'}} className="style-text-main-color display-4">Let's Talk</h3>

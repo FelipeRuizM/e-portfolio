@@ -1,4 +1,5 @@
 import { Row, Col, Image, Container } from 'react-bootstrap';
+import { SectionHeading } from './SectionHeading';
 
 export const About = () => {
 
@@ -6,16 +7,18 @@ export const About = () => {
     <a className='link-effect' href={link} target="_blank" rel="noopener noreferrer">{text}</a>
   );
 
+  const Skill = ({skill}) => (
+    //JavaScript (ES6+)
+    <li><span className='style-text-main-color'>&gt;</span> {skill}</li>
+  );
+
+  const skills1 = ['JavaScript (ES6+)', 'Node.js', 'React', 'MySQL & Mongoose'];
+  const skills2 = ['Python', 'Java', 'C++ & C#', 'AWS'];
+
   return (
     <section id='about'>
       <Container>
-        <Row className="justify-content-center align-items-center">
-          <Col lg={8} className="p-4">
-            <h3 className="style-text-text-color display-4 text-center">
-              <span className='style-text-sub-color'>1.</span> About me
-            </h3>
-          </Col>
-        </Row>
+        <SectionHeading index={1} heading={'About me'}/>
         <Row className="justify-content-center align-items-center">
           <Col md={6} lg={6} className="m-2 p-4">
             <p className='text-start style-text-text-color'>
@@ -29,16 +32,14 @@ export const About = () => {
             </p>
             <div style={{ display: 'flex' }}>
               <ul className='skills-list text-start style-text-text-color'>
-                <li><span className='style-text-main-color'>&gt;</span> JavaScript (ES6+)</li>
-                <li><span className='style-text-main-color'>&gt;</span> Node.js</li>
-                <li><span className='style-text-main-color'>&gt;</span> React</li>
-                <li><span className='style-text-main-color'>&gt;</span> MySQL & Mongoose</li>
+                {skills1.map((skill) => (
+                  <Skill key={skill} skill={skill} />
+                  ))}
               </ul>
               <ul className='skills-list text-start style-text-text-color'>
-                <li><span className='style-text-main-color'>&gt;</span> Python</li>
-                <li><span className='style-text-main-color'>&gt;</span> Java</li>
-                <li><span className='style-text-main-color'>&gt;</span> C++ & C#</li>
-                <li><span className='style-text-main-color'>&gt;</span> AWS</li>
+                {skills2.map((skill) => (
+                  <Skill key={skill} skill={skill} />
+                  ))}
               </ul>
             </div>
           </Col>

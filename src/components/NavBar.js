@@ -3,9 +3,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { getThemesName } from '../scripts/themeChanger';
+import sections from '../assets/data/sections.json';
 
 export const NavBar = ({ theme, setTheme }) => {
-  
+
+  const SectionLink = ({section, index}) => (
+    <Nav.Link href={'#' + section}>
+      <span className='style-text-sub-color'>{index + 1}.</span> {section.charAt(0).toUpperCase() + section.slice(1)}</Nav.Link>
+  );
+
   let themeNames = getThemesName();
 
   let prevScrollpos = window.scrollY;
@@ -27,12 +33,9 @@ export const NavBar = ({ theme, setTheme }) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#about">
-              <span className='style-text-sub-color'>1.</span> About</Nav.Link>
-            <Nav.Link href="#projects">
-              <span className='style-text-sub-color'>2.</span> Projects</Nav.Link>
-            <Nav.Link href="#contact">
-              <span className='style-text-sub-color'>3.</span> Contact</Nav.Link>
+            {sections.map((section, index) => (
+              <SectionLink key={section} section={section} index={index} />
+            ))}
             <NavDropdown title={theme} id="basic-nav-dropdown">
               {themeNames.map((themeName) =>
                 <NavDropdown.Item key={themeName} onClick={() => setTheme(themeName)}>{themeName}</NavDropdown.Item>
