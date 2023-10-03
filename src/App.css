@@ -198,6 +198,7 @@ section {
   border-radius: 4px !important;
   cursor: pointer;
   transition: border-color .2s ease-in-out;
+  margin-bottom: 20px;
 }
 
 .projects-card:hover {
