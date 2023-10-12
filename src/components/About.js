@@ -44,7 +44,7 @@ export const About = () => {
             </div>
           </Col>
           <Col md={6} lg={3} className="m-2 text-center">
-            <Image src={require('../assets/profile-pic.png')} alt={"Felipe Ruiz Profile"} className='img-fluid profile-pic' rounded />
+            <Image src={require('../assets/images/profile-pic.png')} alt={"Felipe Ruiz Profile"} className='img-fluid profile-pic' rounded />
           </Col>
         </Row>
       </Container>
