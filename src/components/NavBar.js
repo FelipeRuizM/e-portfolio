@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { getThemesName } from '../scripts/themeChanger';
 import sections from '../assets/data/sections.json';
+import { Badge } from 'react-bootstrap';
 
 export const NavBar = ({ theme, setTheme }) => {
 
@@ -38,7 +39,7 @@ export const NavBar = ({ theme, setTheme }) => {
             ))}
             <NavDropdown title={theme} id="basic-nav-dropdown">
               {themeNames.map((themeName) =>
-                <NavDropdown.Item key={themeName} onClick={() => setTheme(themeName)}>{themeName}</NavDropdown.Item>
+                <NavDropdown.Item key={themeName} onClick={() => setTheme(themeName)}>{themeName}{themeName === 'chaos theory' ? <Badge bg="dark">try me!</Badge> : ''}</NavDropdown.Item>
               )}
             </NavDropdown>
           </Nav>
