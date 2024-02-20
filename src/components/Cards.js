@@ -1,13 +1,39 @@
 import Card from 'react-bootstrap/Card';
-import { Container } from 'react-bootstrap';
+import { Container, Modal } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import projects from '../assets/data/projects.json';
+import { useState } from 'react';
 
 function Cards() {
 
+  const [show, setShow] = useState(false);
+
   return (
-    <Container>
+    <>
+      <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title">
+        <Modal.Header closeButton>
+          <Modal.Title id="example-custom-modal-styling-title">
+            Custom Modal Styling
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>
+            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+            ipsam atque a dolores quisquam quisquam adipisci possimus
+            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+            deleniti rem!
+          </p>
+        </Modal.Body>
+      </Modal>
+      <Container>
       <Row>
         {projects.map((project, index) => (
           <Col key={index} xs={12} sm={6} lg={4} className="d-flex">
@@ -26,6 +52,7 @@ function Cards() {
         ))}
       </Row>
     </Container>
+    </>
   );
 }
 

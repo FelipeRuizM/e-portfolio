@@ -164,7 +164,10 @@ section {
   display: flex;
 }
 
-#know-more-button, #contact-button {
+#random-theme-button, #contact-button {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
   border: 0.8;
   color: var(--sub-color);
   background-color: var(--bg-color);
@@ -178,7 +181,7 @@ section {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
-#know-more-button:hover, #contact-button:hover {
+#random-theme-button:hover, #contact-button:hover {
   background-color: var(--sub-color);
   color: var(--bg-color);
 }

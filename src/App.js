@@ -33,7 +33,7 @@ function App() {
   return (
       <div className="App">
         <NavBar theme={newAccess ? 'change me!' : theme} setTheme={setTheme} />
-        <Home theme={theme} />
+        <Home theme={theme} setTheme={setTheme} />
         <About />
         <Projects />
         <Contact />

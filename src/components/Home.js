@@ -1,8 +1,20 @@
 import { Row, Col } from "react-bootstrap";
+import { getThemesName } from '../scripts/themeChanger';
 
-export const Home = theme => {
+export const Home = ({ theme, setTheme }) => {
 
-  theme = theme.theme;// get theme name from theme obj
+  const randomTheme = () => {
+    const themeNames = getThemesName();
+    let randomTheme;
+    do {
+      randomTheme = themeNames[Math.floor(Math.random() * themeNames.length)];
+      console.log('theme = ' + theme + ' and random = ' + randomTheme);
+      if (theme === randomTheme) {
+        console.log('oops, same theme!');
+      }
+    } while (theme === randomTheme);
+    setTheme(randomTheme);
+  }
 
   let firstNameClassName = '';
 
@@ -19,8 +31,8 @@ export const Home = theme => {
           <h4 className="style-text-sub-color text-start">Hey, my name is</h4>
           <h1 className={firstNameClassName}>Felipe Ruiz.</h1>
           <h2 className="style-text-text-color display-1 text-start">I'm a Full-Stack Dev.</h2>
-          <p className="text-start col-8">My main goal at the moment is to find a job in my field and keep improving my skills. And hey, this is a customizable e-portfolio, which means you can pick your preferred theme by clicking on the navbar dropdown!</p>
-          <a id="know-more-button" className="float-start" href="#about">A little about me &gt;</a>
+          <p className="text-start col-8">My main goal at the moment is to find a job in my field and keep improving my skills. And hey, this is a customizable e-portfolio, which means you can pick your preferred theme by clicking on the navbar dropdown or try your luck with this button!</p>
+          <div id="random-theme-button" className="float-start" onClick={randomTheme}>change theme &gt;</div>
         </Col>
       </Row>
     </section>
