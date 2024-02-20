@@ -8,9 +8,7 @@ export const Home = ({ theme, setTheme }) => {
     let randomTheme;
     do {
       randomTheme = themeNames[Math.floor(Math.random() * themeNames.length)];
-      console.log('theme = ' + theme + ' and random = ' + randomTheme);
       if (theme === randomTheme) {
-        console.log('oops, same theme!');
       }
     } while (theme === randomTheme);
     setTheme(randomTheme);
