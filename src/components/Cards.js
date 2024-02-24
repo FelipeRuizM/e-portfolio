@@ -18,7 +18,7 @@ function Cards() {
   const [showDCave, setShowDCave] = useState(false);
   const [showECommerce, setShowECommerce] = useState(false);
   const [showEPortfolio, setShowEPortfolio] = useState(false);
-  const [showInventorySystem, setShowInventorySystem] = useState(true);
+  const [showInventorySystem, setShowInventorySystem] = useState(false);
   const [showMatryoshkaGrid, setShowMatryoshkaGrid] = useState(false);
   const [showTetris, setShowTetris] = useState(false);
   const [showAmazonianTiles, setShowAmazonianTiles] = useState(false);
