@@ -63,7 +63,7 @@ function Cards() {
               <Card className={'projects-card flex-fill'}>
                 <div className='stretched-link' style={{ textDecoration: 'none' }} onClick={() => handleCardClick(project.name)}>
                   <Card.Body className="d-flex flex-column">
-                    <Card.Title className='style-text-main-color'>{project.name}</Card.Title>
+                    <Card.Title className='style-text-main-color'>&lt; {project.name} /&gt;</Card.Title>
                     <Card.Text className='style-text-text-color flex-fill'>
                       {project.description}
                     </Card.Text>

@@ -222,6 +222,10 @@ section {
   box-shadow: 10px 10px var(--main-color);
 }
 
+.close {
+  filter: brightness(0) invert(1);
+}
+
 /************** About **************/
 
 .cool-effect {
