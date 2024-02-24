@@ -17,7 +17,7 @@ export const AmazonianTiles = ({ show, setShow }) => {
         <Modal.Body>
           <Row>
             <Col>
-              <p>To access the source code of this project <a className='link-effect' href='https://github.com/FelipeRuizM/amazonian-tiles' target="_blank" rel="noopener noreferrer">click here</a></p>
+              <p>You can check the project for yourself by <a className='link-effect' href='https://feliperuizm.github.io/amazonian-tiles/' target="_blank" rel="noopener noreferrer">clicking here</a> or check the source code by <a className='link-effect' href='https://github.com/FelipeRuizM/amazonian-tiles' target="_blank" rel="noopener noreferrer">clicking here</a>.</p>
             </Col>
           </Row>
         </Modal.Body>
@@ -25,4 +25,3 @@ export const AmazonianTiles = ({ show, setShow }) => {
     </>
   );
 }
-
