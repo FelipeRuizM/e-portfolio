@@ -10,7 +10,7 @@ import { Footer } from './components/Footer';
 
 function App() {
 
-  const DEFAULT_THEME = 'aether';
+  const DEFAULT_THEME = 'dracula';
   const THEME_LOCAL_STORAGE = 'data-theme';
   let newAccess = false;
 

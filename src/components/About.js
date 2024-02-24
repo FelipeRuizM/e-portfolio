@@ -7,7 +7,7 @@ export const About = () => {
     <a className='link-effect' href={link} target="_blank" rel="noopener noreferrer">{text}</a>
   );
 
-  const Skill = ({skill}) => (
+  const Skill = ({ skill }) => (
     //JavaScript (ES6+)
     <li><span className='style-text-main-color'>&gt;</span> {skill}</li>
   );
@@ -44,7 +44,7 @@ export const About = () => {
             </div>
           </Col>
           <Col md={6} lg={3} className="m-2 text-center">
-            <Image src={require('../assets/images/profile-pic.png')} alt={"Felipe Ruiz Profile"} className='img-fluid profile-pic' rounded />
+            <Image src={require('../assets/images/profile-pic.png')} alt={"Felipe Ruiz Profile"} className='img-fluid cool-effect' rounded />
           </Col>
         </Row>
       </Container>

@@ -208,15 +208,29 @@ section {
   border-color: var(--main-color) !important;
 }
 
+.modal-content {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.image-modal {
+  transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+  box-shadow: 10px 10px var(--sub-color);
+}
+
+.image-modal:hover {
+  box-shadow: 10px 10px var(--main-color);
+}
+
 /************** About **************/
 
-.profile-pic {
+.cool-effect {
   margin-right: 8px !important;
   transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
   box-shadow: 10px 10px var(--sub-color);
 }
 
-.profile-pic:hover {
+.cool-effect:hover {
   transform: translate(-0.5rem, -0.5rem);
   box-shadow: 15px 15px var(--main-color);
 }

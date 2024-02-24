@@ -39,7 +39,7 @@ export const NavBar = ({ theme, setTheme }) => {
             ))}
             <NavDropdown title={theme} id="basic-nav-dropdown">
               {themeNames.map((themeName) =>
-                <NavDropdown.Item key={themeName} onClick={() => setTheme(themeName)}>{themeName}{themeName === 'chaos theory' ? <Badge bg="dark">try me!</Badge> : ''}</NavDropdown.Item>
+                <NavDropdown.Item key={themeName} onClick={() => setTheme(themeName)}>{themeName}{themeName === 'chaos theory' ? <Badge bg="dark" className='ms-1'>my fav!</Badge> : ''}</NavDropdown.Item>
               )}
             </NavDropdown>
           </Nav>
