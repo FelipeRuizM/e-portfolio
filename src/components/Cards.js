@@ -15,7 +15,7 @@ import { AmazonianTiles } from './projects/AmazonianTiles';
 
 function Cards() {
 
-  const [showDCave, setShowDCave] = useState(true);
+  const [showDCave, setShowDCave] = useState(false);
   const [showECommerce, setShowECommerce] = useState(false);
   const [showEPortfolio, setShowEPortfolio] = useState(false);
   const [showInventorySystem, setShowInventorySystem] = useState(false);

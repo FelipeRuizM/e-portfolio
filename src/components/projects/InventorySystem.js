@@ -9,7 +9,7 @@ export const InventorySystem = ({ show, setShow }) => {
 
         <h2 className='style-text-main-color'>1. Introduction</h2>
 
-        <p>The Inventory System is an app built using React, Node.js, Express.js, and MySQL for Camosun College to assist lab assistants in organizing and keeping track of thousands of electronic items. My team and I had three months to accomplish this task, and initially, it seemed like an impossible challenge. However, we were ready to face it and give our best.</p>
+        <p>The Inventory System is an app built using <span className='style-text-main-color'>React, Node.js, Express.js, and MySQL</span> for Camosun College to assist lab assistants in organizing and keeping track of thousands of electronic items. My team and I had three months to accomplish this task, and initially, it seemed like an impossible challenge. However, we were ready to face it and give our best.</p>
 
         <p>Comprising three students, Team Elex Sapphire created an amazing product that assists lab assistants and countless students in saving a significant amount of time. Our app makes it easy for lab assistants to find things quickly, and students no longer need to go all the way to the labs to inquire about the availability of certain equipment, they can simply check the app.</p>
 

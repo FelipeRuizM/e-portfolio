@@ -19,7 +19,7 @@ export const MatryoshkaGrid = ({ show, setShow }) => {
             <Row>
               <Col xs={12} sm={12} lg={6}>
                 <h2 className='style-text-main-color'>Playing with p5</h2>
-                <p>This project was from when I was learning how to code and just having fun with the p5 library, so I decided to build a more complex version of tic-tac-toe with overlapping circles.</p>
+                <p>This project was from when I was learning how to code and just having fun with the <span className='style-text-main-color'>p5</span> library, so I decided to build a more complex version of tic-tac-toe with overlapping circles.</p>
                 <p>Unfortunately, the project is unfinished and has a few bugs, but it is still a fun game to play with a friend. Perhaps, in the future, there may be updates and refinements to enhance the overall experience.</p>
                 <p>You can play the game for yourself by <a className='link-effect' href='https://feliperuizm.github.io/MatryoshkaGrid/' target="_blank" rel="noopener noreferrer">clicking here</a> or check the source code by <a className='link-effect' href='https://github.com/FelipeRuizM/MatryoshkaGrid' target="_blank" rel="noopener noreferrer">clicking here</a>.</p>
               </Col>

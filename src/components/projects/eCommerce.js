@@ -8,7 +8,7 @@ export const ECommerce = ({ show, setShow }) => {
       <Col xs={12} sm={12} lg={6}>
 
         <h2 className='style-text-main-color'>1. Introduction</h2>
-        <p>The e-commerce website was my first JavaScript project. It uses the simple (but powerful) JavaScript library jQuery, the front-end framework Bootstrap, and multiple APIs. This project significantly enhanced my understanding of web development and provided hands-on experience in implementing interactive features.</p>
+        <p>The e-commerce website was my first JavaScript project. It uses the simple (but powerful) JavaScript library <span className='style-text-main-color'>jQuery</span>, the front-end framework <span className='style-text-main-color'>Bootstrap</span>, and multiple APIs. This project significantly enhanced my understanding of web development and provided hands-on experience in implementing interactive features.</p>
 
       </Col>
       <Col className="d-flex justify-content-lg-end justify-content-sm-center" xs={12} sm={12} lg={6}>

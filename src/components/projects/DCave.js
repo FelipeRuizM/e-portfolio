@@ -8,7 +8,7 @@ export const DCave = ({ show, setShow }) => {
       <Col xs={12} sm={12} lg={6}>
 
         <h2 className='style-text-main-color'>1. Introduction</h2>
-        <p>DCave is a medieval FPS like game made in Unity. In the game, you are a warrior that uses a bow and arrow to shoot enemies and have to collect keys to unlock doors and defeat the final boss!</p>
+        <p>DCave is a medieval FPS like game made in <span className='style-text-main-color'>Unity</span>. In the game, you are a warrior that uses a bow and arrow to shoot enemies and have to collect keys to unlock doors and defeat the final boss!</p>
         <p>This game was made by me and my friend Diego as our final project for our Unity Class. In this game, we applied concepts like: physics, lighting, animations, UI, Colliders, and many others.</p>
 
       </Col>
@@ -53,7 +53,7 @@ export const DCave = ({ show, setShow }) => {
     <Row className='mt-4'>
       <Col xs={12} sm={12} lg={6}>
         <h2 className='style-text-main-color'>3. Results</h2>
-        <p>Here's a sample gameplay of DCave</p>
+        <p>Here's a sample gameplay of DCave (To be recorded soon!)</p>
       </Col>
       <Col className="d-flex justify-content-lg-end justify-content-sm-center" xs={12} sm={12} lg={6}>
 
