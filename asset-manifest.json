@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/e-portfolio/static/css/main.bc1b3a2a.css",
-    "main.js": "/e-portfolio/static/js/main.d7242808.js",
+    "main.js": "/e-portfolio/static/js/main.2f4f54ad.js",
     "static/js/787.f23336e7.chunk.js": "/e-portfolio/static/js/787.f23336e7.chunk.js",
     "static/media/inventory-demo-fast.mp4": "/e-portfolio/static/media/inventory-demo-fast.87b3a0e266de5fb05095.mp4",
     "static/media/ecommerce-example.png": "/e-portfolio/static/media/ecommerce-example.dccbf38c3bc6b6fbf74d.png",
@@ -17,16 +17,18 @@
     "static/media/CentraNo2-Bold.ttf": "/e-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/e-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/e-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/eportfolio-chaos.png": "/e-portfolio/static/media/eportfolio-chaos.6a0a2fbe118e16c8ff3f.png",
+    "static/media/eportfolio-home.png": "/e-portfolio/static/media/eportfolio-home.ec9b6eed42b2d8418c0a.png",
     "static/media/Yellowtail-Regular.ttf": "/e-portfolio/static/media/Yellowtail-Regular.68015177cbf9575be4a4.ttf",
     "static/media/camosun.png": "/e-portfolio/static/media/camosun.4c96f027a7a91e455a69.png",
     "static/media/matryoshka.png": "/e-portfolio/static/media/matryoshka.e0d926cbad727a118856.png",
     "index.html": "/e-portfolio/index.html",
     "main.bc1b3a2a.css.map": "/e-portfolio/static/css/main.bc1b3a2a.css.map",
-    "main.d7242808.js.map": "/e-portfolio/static/js/main.d7242808.js.map",
+    "main.2f4f54ad.js.map": "/e-portfolio/static/js/main.2f4f54ad.js.map",
     "787.f23336e7.chunk.js.map": "/e-portfolio/static/js/787.f23336e7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc1b3a2a.css",
-    "static/js/main.d7242808.js"
+    "static/js/main.2f4f54ad.js"
   ]
 }
