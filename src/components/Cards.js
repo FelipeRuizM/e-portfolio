@@ -15,7 +15,7 @@ import { AmazonianTiles } from './projects/AmazonianTiles';
 
 function Cards() {
 
-  const [showDCave, setShowDCave] = useState(false);
+  const [showDCave, setShowDCave] = useState(true);
   const [showECommerce, setShowECommerce] = useState(false);
   const [showEPortfolio, setShowEPortfolio] = useState(false);
   const [showInventorySystem, setShowInventorySystem] = useState(false);
@@ -54,24 +54,28 @@ function Cards() {
     }
   }
 
+  const ProjectCard = ({ name, description, technologies, index }) => (
+    <Col key={index} xs={12} sm={index === emphasizedIndex ? 12 : 6} lg={index === emphasizedIndex ? 12 : 4} className="d-flex">
+      <Card className={'projects-card flex-fill'}>
+        <div className='stretched-link' style={{ textDecoration: 'none' }} onClick={() => handleCardClick(name)}>
+          <Card.Body className="d-flex flex-column">
+            <Card.Title className='style-text-main-color'>&lt; {name} /&gt;</Card.Title>
+            <Card.Text className='style-text-text-color flex-fill'>
+              {description}
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer className="style-text-sub-color">{technologies}</Card.Footer>
+        </div>
+      </Card>
+    </Col>
+  );
+
   return (
     <>
       <Container>
         <Row>
           {projects.map((project, index) => (
-            <Col key={index} xs={12} sm={index === emphasizedIndex ? 12 : 6} lg={index === emphasizedIndex ? 12 : 4} className="d-flex">
-              <Card className={'projects-card flex-fill'}>
-                <div className='stretched-link' style={{ textDecoration: 'none' }} onClick={() => handleCardClick(project.name)}>
-                  <Card.Body className="d-flex flex-column">
-                    <Card.Title className='style-text-main-color'>&lt; {project.name} /&gt;</Card.Title>
-                    <Card.Text className='style-text-text-color flex-fill'>
-                      {project.description}
-                    </Card.Text>
-                  </Card.Body>
-                  <Card.Footer className="style-text-sub-color">{project.technologies}</Card.Footer>
-                </div>
-              </Card>
-            </Col>
+            <ProjectCard {...project} index={index} />
           ))}
         </Row>
       </Container>

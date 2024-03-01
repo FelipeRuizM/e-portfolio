@@ -226,6 +226,10 @@ section {
   filter: brightness(0) invert(1);
 }
 
+.btn-close {
+  background-color: var(--sub-color) !important;
+}
+
 /************** About **************/
 
 .cool-effect {

@@ -39,9 +39,9 @@ export const Footer = ({theme}) => {
         <Col className="footer col-lg-8 pt-5">
           <p className="style-text-text-color"> &copy; Felipe Ruiz - 2024</p>
           <div className={iconClass}>
-            {<GithubIcon />}
-            {<LinkedInIcon />}
-            {<InstagramIcon />}
+            <GithubIcon />
+            <LinkedInIcon />
+            <InstagramIcon />
           </div>
         </Col>
       </Row>
